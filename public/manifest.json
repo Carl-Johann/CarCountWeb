@@ -1,0 +1,26 @@
+{
+	"short_name": "Car Count",
+	"name": "Car Count",
+	"icons": [{
+			"src": "./icons/Icon-App-20x20@1x.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		}, {
+			"src": "./icons/Icon-App-29x29@1x.png",
+			"sizes": "24x24",
+			"type": "image/png"
+		}, {
+			"src": "./icons/Icon-Small-50x50@1x.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},{
+			"src": "./icons/Icon-App-40x40@2x.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		}
+	],
+	"start_url": "./",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
