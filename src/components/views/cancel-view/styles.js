@@ -1,6 +1,8 @@
+
+
 export const styles = {
     container: {
-        marginTop: '30vh',
+        marginTop: '10vh',
     },
 
     input: {
@@ -32,11 +34,21 @@ export const styles = {
     },
 
     loaderContainer: {
-        // paddingLeft: '20vw'
-        // paddingLeft: 'calc(50% - 50px)'
         marginTop: '3vh',
         left: -40
-    }
+    },
+
+
+    titleText: {
+        textAlign: 'center',
+        paddingTop: '4vh',
+        paddingBottom: '4vh',
+
+    },
+
+    fullwidth: {
+        width: '100%'
+    },
 
 
 }
@@ -59,6 +71,7 @@ const col_lg_post = 'col-lg-1 offset-lg-6'
 
 export const cols = {
     input: col.concat(' ', col_md, ' ', col_lg),
+    titleText: col.concat(' ', col_md, ' ', col_lg),
     postButton: col.concat(' ', col_md, ' ', col_lg),
     loader: col_post.concat(' ', col_md_post, ' ', col_lg_post),
 }

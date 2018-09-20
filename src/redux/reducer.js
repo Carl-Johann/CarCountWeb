@@ -10,8 +10,18 @@ function Reducer(state = initialState, action) {
 
     switch (action.type) {
 
-        case SET_TOKEN_INFO : {
-            const { tokenInfo } = action
+        case SET_TOKEN_INFO : {
+            const { accessToken } = action
+
+            let expiresOn = new Date()
+            expiresOn = new Date(expiresOn.setHours(expiresOn.getHours() +1))
+
+            const tokenInfo = {
+                accessToken,
+                expiresOn,
+            }
+
+            console.log('tokenInfo', tokenInfo)
 
             return {
                 ...state,

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app/'
+import App from './components'
 import registerServiceWorker from './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter } from 'react-router-dom'
@@ -21,7 +21,3 @@ ReactDOM.render(
     ,document.getElementById('root')
 )
 registerServiceWorker()
-
-
-{/*<Provider store={ createStore(Reducer) }>*/}
-        {/*</Provider>*/}

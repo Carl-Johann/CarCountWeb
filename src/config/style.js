@@ -1,5 +1,6 @@
 export const colors = {
-    mainBackgroundColor: '#95A3A4'
+    mainBackgroundColor: '#95A3A4',
+    buttonBackgroundColor: '#6c757d',
 }
 
 

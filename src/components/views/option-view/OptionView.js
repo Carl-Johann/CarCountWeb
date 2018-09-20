@@ -28,19 +28,23 @@ export default class OptionView extends Component {
 
     render() {
 
+        const { batchId } = this.props
+
         return (
             <div className='option-view container'>
                 <div className='row' style={ styles.startBatchContainer }>
                     <OptionButton
-                        text={ 'Start Batch' }
+                        enabled={ batchId < 0 }
+                        method={ this.start }
                         image={ 'start.png' }
-                        method={this.start}
+                        text={ 'Start Batch' }
                     />
 
                     <OptionButton
-                        text={ 'Cancel Batch' }
+                        enabled={ batchId > 0 }
+                        method={ this.cancel }
                         image={ 'cancel.png' }
-                        method={this.cancel}
+                        text={ 'Cancel Batch' }
                     />
                 </div>
             </div>

@@ -2,12 +2,12 @@ import { design } from '../../../../config/style'
 
 export const styles = {
     button: {
-        radius: design.radius,
         height: '200px',
         marginTop: '10vw',
+        radius: design.radius,
         boxShadow: '9px 7px 90px 2px rgba(0,0,0,0.16)',
-        mozBoxShadow: '9px 7px 90px 2px rgba(0,0,0,0.16)',
-        webkitBoxShadow: '9px 7px 90px 2px rgba(0,0,0,0.16)',
+        MozBoxShadow: '9px 7px 90px 2px rgba(0,0,0,0.16)',
+        WebkitBoxShadow: '9px 7px 90px 2px rgba(0,0,0,0.16)',
     },
 
     picTextPadding: {
