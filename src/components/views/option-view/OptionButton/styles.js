@@ -23,7 +23,7 @@ export const styles = {
 
 // cols
 const col = 'col-10 offset-1'
-const col_md = ''
+const col_md = 'col-lg-3 offset-lg-2'
 const col_lg = 'col-lg-3 offset-lg-2'
 
 export const cols = {

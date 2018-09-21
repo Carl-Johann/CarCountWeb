@@ -37,7 +37,7 @@ export default class OptionView extends Component {
                         enabled={ batchId < 0 }
                         method={ this.start }
                         image={ 'start.png' }
-                        text={ 'Start Batch' }
+                        text={ 'New Batch' }
                     />
 
                     <OptionButton
