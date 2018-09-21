@@ -34,6 +34,7 @@ export const signOut = () => {
 
 export const whitelist = [
     '3a7d0873-dad2-48bd-9ea5-e9d0d3fde78a', // Blinklater
+    '',
 ]
 
 
