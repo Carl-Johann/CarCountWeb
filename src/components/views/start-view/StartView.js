@@ -33,8 +33,7 @@ export default class StartView extends Component {
         // Get profile for request
         const profile = JSON.parse(window.localStorage.getItem(userProfile))
 
-
-        request(api.batches.newBatch, 'POST', { batchInit: profile.id }, resp => {
+        request(api.batches.newBatch, 'POST', { batchInit: profile.oid }, resp => {
             window.location.href = '/'
         })
     }

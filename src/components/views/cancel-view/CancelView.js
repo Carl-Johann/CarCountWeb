@@ -37,7 +37,7 @@ class CancelView extends Component {
         const batchId = JSON.parse(window.localStorage.getItem(carCountbatchId))
 
         // We add the cancelInit, since there's no space for it in the db
-        comment = 'CancelInit: '.concat(profile.id, '. Comment: ', comment)
+        comment = 'CancelInit: '.concat(profile.oid, '. Comment: ', comment)
 
 
         request(api.batches.updateStatus, 'POST', { status: 'cancel', comment, batchId }, resp => {
@@ -81,7 +81,7 @@ class CancelView extends Component {
                                     // Show post button
                                     <Button
                                         disabled={ loading }
-                                        onClick={ () => this.cancel() }
+                                        onClick={ this.cancel }
                                         style={ styles.postButton }
                                         className={ cols.postButton }
                                     >

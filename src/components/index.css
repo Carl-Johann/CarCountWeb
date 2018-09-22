@@ -2,3 +2,14 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+.back-arrow {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0.6;
+    background-color: transparent;
+    border-color: transparent;
+    top: 15px;
+    left: 15px;
+}
